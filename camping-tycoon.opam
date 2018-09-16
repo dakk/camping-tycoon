@@ -1,0 +1,31 @@
+opam-version: "1.2"
+name: "camping-tycoon"
+version: "0.2"
+maintainer: "Davide Gessa <gessadavide@gmail.com>"
+authors: [
+  "Davide Gessa <gessadavide@gmail.com>"
+]
+
+homepage: "https://github.com/dakk/camping-tycoon"
+bug-reports: "https://github.com/dakk/camping-tycoon/issues"
+license: "MIT"
+dev-repo: "https://github.com/dakk/camping-tycoon.git"
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs "@install"]
+]
+build-test: [
+  ["jbuilder" "build" "-p" name "-j" jobs "@runtest" "@doc"]
+]
+build-doc: [
+  ["jbuilder" "build" "-p" name "-j" jobs "@doc"]
+]
+
+depends: [
+  "dune" {build & >= "1.2.0"}
+  
+  "tsdl" {= "0.9.5"}
+]
+
+depexts: [
+]
+
