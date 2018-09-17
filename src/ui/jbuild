@@ -2,4 +2,5 @@
 
 (library
  ((name ui)
+  (flags "-w")
   (libraries (tsdl))))

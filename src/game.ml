@@ -10,13 +10,13 @@ type t = {
 
 let is_running g = if g.ticks < 100 then true else false;;
 
-let init () = 
+let init r = 
   let g = {
     ticks= 0;
-    ui= Ui.init ();
-    world= World.init ();
+    ui= Ui.init r;
+    world= World.init r;
   } in
-  g.ui <- Ui.add_window g.ui @@ Ui.create_window ();
+  (*g.ui <- Ui.add_window g.ui @@ Ui.create_window ();*)
   g
 ;;
 

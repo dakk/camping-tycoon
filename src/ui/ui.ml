@@ -3,7 +3,7 @@ type t = {
   toolbar: Toolbutton.t list
 };;
 
-let init () = {
+let init r = {
   windows= [];
   toolbar= [];
 };;

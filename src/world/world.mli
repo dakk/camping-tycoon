@@ -2,5 +2,5 @@ open Tsdl
 
 type t 
 
-val init: unit -> t
+val init: Sdl.renderer -> t
 val draw: t -> Sdl.renderer -> unit

@@ -2,4 +2,5 @@
 
 (library
  ((name world)
-  (libraries (tsdl))))
+  (flags "-w")
+  (libraries (tsdl tsdl_image))))
