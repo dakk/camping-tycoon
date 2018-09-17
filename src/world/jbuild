@@ -2,4 +2,4 @@
 
 (library
  ((name world)
-  (libraries ())))
+  (libraries (tsdl))))

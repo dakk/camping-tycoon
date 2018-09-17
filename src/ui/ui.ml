@@ -1,12 +1,14 @@
 type t = {
-  windows: Window.t list
+  windows: Window.t list;
+  toolbar: Toolbutton.t list
 };;
 
 let init () = {
-  windows= []
+  windows= [];
+  toolbar= [];
 };;
 
-let add_window ui w = { windows=ui.windows @ [w] };;
+let add_window ui w = { ui with windows=ui.windows @ [w] };;
 
 let create_window () = Window.create ();;
 
