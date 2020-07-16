@@ -1,7 +1,9 @@
 all:
-	dune build @install 
+	dune build @install
+
 test:
 	dune build @runtest
+
 clean:
 	rm -rf _build
 
